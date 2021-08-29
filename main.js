@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require('electron')
+const { join } = require('path')
 
-// variaveis para funcionamento do electron
 let mainWindow
 
 function createWindow() {
@@ -16,7 +16,7 @@ function createWindow() {
   })
 
   mainWindow.removeMenu()
-  mainWindow.loadFile('presentation.html')
+  mainWindow.loadFile(join(__dirname, 'src', 'pages', 'presentation', 'presentation.html'))
 }
 
 app.whenReady().then(createWindow)
