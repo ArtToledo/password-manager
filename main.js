@@ -17,6 +17,8 @@ function createWindow() {
 
   mainWindow.removeMenu()
   mainWindow.loadFile(join(__dirname, 'src', 'pages', 'presentation', 'presentation.html'))
+  /* mainWindow.loadFile(join(__dirname, 'src', 'pages', 'home', 'home.html'))
+  mainWindow.loadFile(join(__dirname, 'src', 'pages', 'new-password', 'new-password.html')) */
 }
 
 app.whenReady().then(createWindow)
